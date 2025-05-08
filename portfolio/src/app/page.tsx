@@ -4,6 +4,8 @@ import Main from '@/app/componets/main';
 import About from '@/app/componets/about';
 import Resume from '@/app/componets/resume';
 import Skills from '@/app/componets/skills';
+import Myproject from './componets/Myprojects';
+import Contact from '@/app/componets/contact';
 
 
 
@@ -15,7 +17,9 @@ export default function Home() {
       <About />
       <Resume/>
       <Skills/>
-    
+    <Myproject/>
+    <Contact/>
+
 
     </main>
   );
