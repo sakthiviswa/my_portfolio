@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from "react";
+import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
 
 const contact = () => {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -16,12 +17,12 @@ const contact = () => {
   };
 
   return (
-    <div className="min-h-screen  py-16 px-6">
+    <div className="min-h-screen flex items-center px-6">
        
-      <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
+      <div className="  max-w-6xl mx-auto grid md:grid-cols-2 gap-20">
         {/* Left Section */}
         <div>
-          <h2 className="text-4xl font-bold mb-6 text-purple-400">Get in Touch</h2>
+          <h2 className="text-6xl font-bold mb-6 text-purple-400">Get in Touch</h2>
           <p className="text-gray-400 mb-6">
             I'd love to hear from you! Whether you have a project in mind or just want to say hi, feel free to drop a message.
           </p>
@@ -29,20 +30,32 @@ const contact = () => {
             <li>
               <span className="font-semibold text-purple-300">Email:</span>{" "}
               <a href="mailto:your.email@example.com" className="text-gray-300 hover:underline">
-                your.email@example.com
+                sakthinathan3110@gmail.com
               </a>
             </li>
             <li>
               <span className="font-semibold text-purple-300">Phone:</span>{" "}
               <a href="tel:+1234567890" className="text-gray-300 hover:underline">
-                +1 234 567 890
+                +91 7373567056
               </a>
             </li>
             <li>
               <span className="font-semibold text-purple-300">Location:</span>{" "}
-              <span className="text-gray-300">City, Country</span>
+              <span className="text-gray-300">Coimbatore, Tamilnadu</span>
             </li>
           </ul>
+           {/* Social Icons */}
+                    <div className="mt-8 flex items:center gap-6 text-2xl text-gray-400">
+                      <a href="https://github.com/sakthiviswa" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                        <FaGithub />
+                      </a>
+                      <a href="https://www.linkedin.com/in/sakthinathan-v-374a202a2/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
+                        <FaLinkedin />
+                      </a>
+                      <a href="mailto:sakthinathan3110@email.com" className="hover:text-white">
+                        <FaEnvelope />
+                      </a>
+                    </div>
         </div>
 
         {/* Right Section - Contact Form */}

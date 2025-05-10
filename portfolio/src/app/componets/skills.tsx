@@ -1,14 +1,7 @@
 const skills=()=>{
 
 
-    const frontendSkills = [
-        {
-            
-
-
-
-        }
-      ]
+   
     
     return(
 
@@ -17,7 +10,7 @@ const skills=()=>{
                 <h1 className="flex justify-center text-white text-5xl  font-semibold">Skills</h1>
                 <p className="text-gray-600  text-md px-40 mt-3">Skilled in frontend and mobile development using React, React Native, Java, and Python.
                 Proficient with tools like Git, Figma, Firebase, and Postman, with a strong focus on clean, efficient code.</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6 overflow-x-auto">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 p-6 overflow-x-auto ">
   {[
     {
       year: "Frontend",
@@ -73,7 +66,7 @@ const skills=()=>{
       <div className="relative rounded-xl overflow-hidden">
         <div className="absolute inset-0 border-2 border-purple-900 rounded-2xl z-10 pointer-events-none transition-all duration-300 group-hover:border-4 group-hover:border-purple-500 group-hover:shadow-[0_0_15px_rgba(168,85,247,0.5)]"></div>
         <div
-          className="relative w-full h-full bg-gray-900 p-8 z-0 transition-all duration-300"
+          className="relative w-full h-full bg-gray-900 p-8 z-0 transition-all duration-300 "
           style={{
             backgroundColor: 'rgba(255, 255, 255, 0.1)',
             boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
